@@ -1,51 +1,90 @@
 ﻿<!DOCTYPE html>
-
 <html lang="uk">
 <head>
-    <meta charset="utf-8" />
-    <title>Резюме - Карагяур Карина</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Карагяур Карина</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f1f5f9;
+        }
+        
+        #contacts {
+            background-color: #f1f5f9;
+            border-left: 4px solid #f1c232;
+            border-radius: 6px;
+        }
+
+            #contacts h2 {
+                margin-top: 0;
+                color: #000000;
+            }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Карагяур Карина</h1>
-        <section>
-            <h2>Контактна інформація</h2>
-            <p>
-                Місто: Львів
-                Ел. пошта: <a href="mailto:karyna.karahiaur.kb.2025@lpnu.ua">karyna.karahiaur.kb.2025@lpnu.ua</a>
-                Телефон: <a href="tel:+380685594071">+38 (068) 559-40-71</a>
-            </p>
-        </section>
-    </header>
 
-    <main>
-        <section>
-            <h2>Про себе</h2>
-            <p>
-                Вмотивована студентка кібербезпеки базовими знаннями комп'ютерних систем, роботи операційних систем та мережевих протоколів.
-                Маю досвід у програмуванні на Python та C#, проведенні аудитів за стандартом ISO27001. Швидко опановую нові програмні забезпечення,
-                уважн до деталей, вмію працювати в команді.
-            </p>
-        </section>
+    <div class="page-wrapper">
+        <header class="card" style="border-top: 5px solid #f1c232;">
+            <h1 class="main-title">Карагяур Карина</h1>
+            <p class="subtitle">Студентка кафедри кібербезпеки та захисту інформації</p>
 
-        <section>
-            <h2>Навички</h2>
-            <ul>
-                <li>Базові знання Python та C#</li>
-                <li>Фундаментальні знання ISO 27001</li>
-                <li>Мови: українська, анлгійська(В2)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Освіта</h2>
-            <p>
-                Здобуття бакалавру зі спеціальності "Кібербезпека та захист інформації" (2025 - 2029) у Національному університеті "Львівська політехніка"
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p> 2026р Карагяур Карина </p>
-    </footer>
+            <section id="contacts">
+                <h2>Контактна інформація</h2>
+                <ul class="contact-list">
+                    <li><strong>Місто:</strong> Львів</li>
+                    <li>
+                        <strong>Ел. пошта:</strong>
+                        <a href="mailto:karyna.karahiaur.kb.2025@lpnu.ua">karyna.karahiaur.kb.2025@lpnu.ua</a>
+                    </li>
+                    <li>
+                        <strong>Телефон:</strong>
+                        <a href="tel:+380685594071">+38 (068) 559-40-71</a>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+        <main class="content-grid">
+            <section class="card summary-card">
+                <h2>Про себе</h2>
+                <p>
+                    Вмотивована студентка з базовими знаннями комп'ютерних систем, роботи операційних систем та мережевих протоколів.
+                    Маю практичний досвід програмування на Python та C#, вивчення стандарту ISO 27001. Швидко опановую нові програмні інструменти,
+                    уважна до деталей і націлена на командний результат.
+                </p>
+            </section>
+
+            <section class="card skills-card">
+                <h2>Навички</h2>
+                <ul class="styled-list">
+                    <li>Базові знання Python та C#</li>
+                    <li>Фундаментальні знання стандарту ISO 27001</li>
+                    <li>Мови: українська (рідна), англійська (B2)</li>
+                    <li>Мережеві протоколи та налаштування безпеки</li>
+                </ul>
+            </section>
+
+            <section class="card education-card">
+                <h2>Освіта</h2>
+                <article>
+                    <h3>Здобуття ступеня бакалавра</h3>
+                    <p class="meta-info">2025 — 2029 | НУ «Львівська політехніка»</p>
+                    <p>Спеціальність: «Кібербезпека та захист інформації».</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="card footer-card">
+            <p>&copy; 2026 Карагяур Карина</p>
+        </footer>
+    </div>
 
 </body>
 </html>

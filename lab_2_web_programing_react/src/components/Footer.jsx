@@ -1,8 +1,7 @@
-function Footer() {
+export default function Footer() {
   return (
-    <footer>
-      <p><small>© 2026 Карагяур Карина</small></p>
+    <footer className="p-4 text-center text-sm text-[#7c6a50] border-t border-[#d8c39d]">
+      <p>&copy; 2026 Карагяур Карина</p>
     </footer>
   );
 }
-export default Footer;
